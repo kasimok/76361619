@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9ADACB062A29E42D00B2002E /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADACB052A29E42D00B2002E /* AudioVisualizerView.swift */; };
+		9ADACB082A29E44B00B2002E /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADACB072A29E44B00B2002E /* Color+Ext.swift */; };
+		9ADACB0A2A29E4D000B2002E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADACB092A29E4D000B2002E /* AudioManager.swift */; };
+		9ADACB0C2A29E54700B2002E /* AVAudioPCMBuffer+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADACB0B2A29E54700B2002E /* AVAudioPCMBuffer+Exts.swift */; };
 		9AE72E772A29BDB1004DFFEA /* _6361619App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE72E762A29BDB1004DFFEA /* _6361619App.swift */; };
 		9AE72E792A29BDB1004DFFEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE72E782A29BDB1004DFFEA /* ContentView.swift */; };
 		9AE72E7B2A29BDB2004DFFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE72E7A2A29BDB2004DFFEA /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9ADACB052A29E42D00B2002E /* AudioVisualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
+		9ADACB072A29E44B00B2002E /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		9ADACB092A29E4D000B2002E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		9ADACB0B2A29E54700B2002E /* AVAudioPCMBuffer+Exts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVAudioPCMBuffer+Exts.swift"; sourceTree = "<group>"; };
 		9AE72E732A29BDB1004DFFEA /* 76361619.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 76361619.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE72E762A29BDB1004DFFEA /* _6361619App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _6361619App.swift; sourceTree = "<group>"; };
 		9AE72E782A29BDB1004DFFEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +63,10 @@
 				9AE72E782A29BDB1004DFFEA /* ContentView.swift */,
 				9AE72E7A2A29BDB2004DFFEA /* Assets.xcassets */,
 				9AE72E7C2A29BDB2004DFFEA /* Preview Content */,
+				9ADACB052A29E42D00B2002E /* AudioVisualizerView.swift */,
+				9ADACB072A29E44B00B2002E /* Color+Ext.swift */,
+				9ADACB0B2A29E54700B2002E /* AVAudioPCMBuffer+Exts.swift */,
+				9ADACB092A29E4D000B2002E /* AudioManager.swift */,
 			);
 			path = 76361619;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE72E792A29BDB1004DFFEA /* ContentView.swift in Sources */,
+				9ADACB0A2A29E4D000B2002E /* AudioManager.swift in Sources */,
 				9AE72E772A29BDB1004DFFEA /* _6361619App.swift in Sources */,
+				9ADACB062A29E42D00B2002E /* AudioVisualizerView.swift in Sources */,
+				9ADACB0C2A29E54700B2002E /* AVAudioPCMBuffer+Exts.swift in Sources */,
+				9ADACB082A29E44B00B2002E /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +286,7 @@
 				DEVELOPMENT_TEAM = T2DT6C6U3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow to record";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +316,7 @@
 				DEVELOPMENT_TEAM = T2DT6C6U3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow to record";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
