@@ -33,6 +33,7 @@ struct ContentView: View {
                 Text($0.portName)
               }
             }.pickerStyle(.segmented).onChange(of: currentDevice) { newValue in
+              
               debugPrint("Selection Changed to: \(newValue)")
               
               if let inputDevicePortDescription = devices.first(where: {$0.portName == currentDevice}) {
@@ -58,6 +59,7 @@ struct ContentView: View {
       }
   }
   private func refreshData(){
+    debugPrint("\(#function): AVAudioSession.routeChangeNotification: ",AVAudioSession.sharedInstance().currentRoute.inputs.first?.portName ?? "NA")
     devices = AVAudioSession.sharedInstance().availableInputs ?? []
     currentDevice = AVAudioSession.sharedInstance().currentRoute.inputs.first?.portName ?? ""
   }
