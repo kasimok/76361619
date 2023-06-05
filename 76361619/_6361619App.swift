@@ -10,14 +10,17 @@ import AVFoundation
 
 @main
 struct _6361619App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView().onAppear {
-              let session = AVAudioSession.sharedInstance()
-              try? session.setCategory(.playAndRecord, options: [.defaultToSpeaker, .allowBluetooth])
-              try? session.setActive(true)
-              kAudioMgr.startMonitoring()
-            }
-        }
+  
+  init() {
+    let session = AVAudioSession.sharedInstance()
+    try? session.setCategory(.playAndRecord, options: [.defaultToSpeaker, .allowBluetooth])
+    try? session.setActive(true)
+    kAudioMgr.startMonitoring()
+  }
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
