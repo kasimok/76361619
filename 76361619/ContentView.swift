@@ -9,8 +9,7 @@ import SwiftUI
 import AVFoundation
 import Combine
 
-private var cancellables = Set<AnyCancellable>()
-
+var cancellables = Set<AnyCancellable>()
 
 struct ContentView: View {
   

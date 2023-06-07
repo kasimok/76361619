@@ -7,15 +7,78 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A88FBF67-65B7-42AF-9ABE-EDDB23AEBB07"
+            uuid = "1DCDBDD1-2564-481B-BF34-E340C523B24E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "76361619/AudioManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "startMonitoring()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1DCDBDD1-2564-481B-BF34-E340C523B24E - 1ad4084c2fc8237"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.AVAudioPCMBuffer, __C.AVAudioTime) -&gt; () in _6361619.AudioManager.startMonitoring() -&gt; ()"
+                  moduleName = "76361619"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0x67/Desktop/76361619/76361619/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "1DCDBDD1-2564-481B-BF34-E340C523B24E - d103cb95e51b6130"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_6361619.AudioManager.startMonitoring() -&gt; ()"
+                  moduleName = "76361619"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0x67/Desktop/76361619/76361619/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "1DCDBDD1-2564-481B-BF34-E340C523B24E - 1ad4084c2fc8254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.AVAudioPCMBuffer, __C.AVAudioTime) -&gt; () in _6361619.AudioManager.startMonitoring() -&gt; ()"
+                  moduleName = "76361619"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0x67/Desktop/76361619/76361619/AudioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44898490-BE03-443D-A461-179B9FA95A64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "76361619/AudioManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "startMonitoring()"
             landmarkType = "7">
          </BreakpointContent>

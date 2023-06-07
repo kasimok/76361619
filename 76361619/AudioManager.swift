@@ -17,8 +17,6 @@ class AudioManager: ObservableObject {
   private var currentSample: Int
   
   private (set) var audioEngine: AVAudioEngine = AVAudioEngine()
-    
-  private let sampleRate = 16000.0
   
   private let bufferSize = 2048
   
@@ -36,15 +34,20 @@ class AudioManager: ObservableObject {
     self.currentSample = 0
     displayLink = CADisplayLink(target: self, selector: #selector(updateSoundSamples))
     displayLink?.add(to: .main, forMode: .default)
+    NotificationCenter.Publisher(center: .default, name: .AVAudioEngineConfigurationChange).sink { noti in
+      self.stopMonitoring()
+      self.startMonitoring()
+    }.store(in: &cancellables)
+    
   }
   
   public func startMonitoring(){
+    audioEngine = AVAudioEngine()
     let inputNode = audioEngine.inputNode
     let inputFormat = inputNode.outputFormat(forBus: 0)
-
     // Install a tap on the audio engine with the buffer size and the input format.
+    debugPrint("inputFormat:",inputFormat)
     audioEngine.inputNode.installTap(onBus: 0, bufferSize: AVAudioFrameCount(bufferSize), format: inputFormat) { buffer, _ in
-      
       self.audioMetering(buffer: buffer)
     }
     audioEngine.prepare()
